@@ -28,13 +28,18 @@ console.log(variableA);
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
+const stringConversion = parseInt(1999, 10);
 
+console.log(stringConversion);
 
 
 
 
 //Task d: Write a function to multiply a*b 
-
+function multiply(a,b) {
+    console.log(a * b);
+}
+multiply(2,2);
 
 
 
