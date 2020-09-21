@@ -13,7 +13,16 @@ if (age >= votingAge) {
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
+let variableA = 5;
+const variableB = 2;
 
+if (variableA > variableB) {
+    variableA++;
+} else {
+    console.log("Not today")
+}
+
+console.log(variableA);
 
 
 
