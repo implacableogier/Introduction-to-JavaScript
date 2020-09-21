@@ -47,16 +47,25 @@ multiply(2,2);
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
+function dogYearsAge() {
+    return Math.round(age / 7)
+}
 
-
-
+console.log(dogYearsAge())
 
 
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder 
-//takes weight in pounds and age in years (note if the dog is a puppy the age will be a decimal) and returns the number of pounds of raw food to feed in a day.
+//takes weight in pounds and age in years (note if the dog is a puppy the age will be a decimal) 
+//and returns the number of pounds of raw food to feed in a day.
 
-//feeding requirements
+
+function feedingRequirements (dogWeight, dogAge) {
+    let dailyPounds = 
+}
+
+
+// feeding requirements
 // adult dogs at least 1 year 
 // up to 5 lbs - 5% of their body weight
 // 6 - 10 lbs - 4% of their body weight 
@@ -68,7 +77,8 @@ multiply(2,2);
 // 4 - 7 months 5% of their body weight 
 // 7 - 12 months 4% of their body weight
 
-// when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
+// when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - 
+// if your calculations are correct your result should be 0.44999999999999996
   
 
 
@@ -77,7 +87,8 @@ multiply(2,2);
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
 // Your function should take a string (either rock paper or sissors)
-// it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
+// it should return you won or you lost based on the rules of the game (you may need to look up the rules if you 
+//have not played before)
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
