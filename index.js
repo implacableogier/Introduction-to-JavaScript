@@ -1,7 +1,14 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
+const votingAge = 18;
 
+age = window.prompt("Please enter your age");
 
+if (age >= votingAge) {
+    console.log("True")
+} else {
+    console.log("False")
+}
 
 
 
