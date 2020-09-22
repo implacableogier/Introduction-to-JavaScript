@@ -127,12 +127,21 @@ console.log(dailyFood(15,1))
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
 
+function kilosToMiles(kilometers) {
+    const conversion = .621371;
+    return kilometers * conversion;
+}
+console.log(kilosToMiles(10))
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-
+function feetToCm(feet) {
+    const conversion = 30.48;
+    return feet * conversion;
+}
+console.log(feetToCm(2))
 
 
 
