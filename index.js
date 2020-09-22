@@ -2,7 +2,9 @@
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 const votingAge = 18;
 
-age = window.prompt("Please enter your age");
+
+
+age = 32;
 
 if (age >= votingAge) {
     console.log("True")
@@ -59,11 +61,36 @@ console.log(dogYearsAge())
 //takes weight in pounds and age in years (note if the dog is a puppy the age will be a decimal) 
 //and returns the number of pounds of raw food to feed in a day.
 
+function dailyFood (dogWeight, dogAge) {
+    
+    if (dogAge >= 1 && dogWeight <= 5) {
+        return dogWeight * .05;
+    } 
+    else if (dogWeight > 5 && dogWeight < 11) {
+        return dogWeight * .04;
+    }
+    else if (dogWeight > 10 && dogWeight < 16) {
+        return dogWeight * .03;
+    }
+    else if (dogWeight > 15 && dogAge >= 1){
+        return dogWeight * .02;
+    }
+    //Above is the code which returns values for dogs above 1 year in age. Below is for those younger than 1 year.
+    else if (dogAge < 1 && dogAge > .5833) {
+        return dogWeight * .04;
+    }
+    else if (dogAge < .5833 && dogAge > .3333) {
+        return dogWeight * .05;
+    }
+    else if (dogAge < .3333 && dogAge > .1666) {
+        return dogWeight * .1
+    }
 
-function feedingRequirements (dogWeight, dogAge) {
-    let dailyPounds = 
+
+
 }
 
+console.log(dailyFood(15,1))
 
 // feeding requirements
 // adult dogs at least 1 year 
