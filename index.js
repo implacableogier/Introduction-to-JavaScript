@@ -154,13 +154,14 @@ console.log(feetToCm(2))
 // log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) 
 // bottles of soda on the wall`
   
-function annoyingSong(howManyTimes) {
+function annoyingSong(bottles) {
     
-    for (let i = 0; i < howManyTimes; i++) {
-        console.log(howManyTimes + " bottles of soda on the wall, " + howManyTimes + " bottles of soda, take one down pass it around" );
+    for (let i = bottles; i > 0; i--) {
+
+        console.log(`${i} bottles of soda on the wall, ${i} bottles of soda. Take one down, pass it around, ${i-1} bottles of soda on the wall.`);
     }
 }
-console.log(annoyingSong(99))
+console.log(annoyingSong(5))
 
 
 
