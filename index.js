@@ -75,7 +75,9 @@ function dailyFood (dogWeight, dogAge) {
     else if (dogWeight > 15 && dogAge >= 1){
         return dogWeight * .02;
     }
+    
     //Above is the code which returns values for dogs above 1 year in age. Below is for those younger than 1 year.
+    
     else if (dogAge < 1 && dogAge > .5833) {
         return dogWeight * .04;
     }
@@ -148,9 +150,17 @@ console.log(feetToCm(2))
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
-// the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
+// the function should take a starting number as an argument and count down - at each iteration it should 
+// log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) 
+// bottles of soda on the wall`
   
-
+function annoyingSong(howManyTimes) {
+    
+    for (let i = 0; i < howManyTimes; i++) {
+        console.log(howManyTimes + " bottles of soda on the wall, " + howManyTimes + " bottles of soda, take one down pass it around" );
+    }
+}
+console.log(annoyingSong(99))
 
 
 
