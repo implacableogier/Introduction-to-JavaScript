@@ -7,9 +7,9 @@ const votingAge = 18;
 age = 32;
 
 if (age >= votingAge) {
-    console.log("True")
+    console.log(true)
 } else {
-    console.log("False")
+    console.log(false)
 }
 
 
@@ -30,7 +30,7 @@ console.log(variableA);
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
-const stringConversion = parseInt(1999, 10);
+const stringConversion = parseInt("1999", 10);
 
 console.log(stringConversion);
 
@@ -121,8 +121,119 @@ console.log(dailyFood(15,1))
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
+// function rockPaperScissors() {
+
+
+
+//     let rockPaperGenerator = Math.ceil(Math.random() * 3);
+    
+//     if (rockPaperGenerator === 1) {
+//       console.log("rock");
+//       rockPaperGenerator = 'rock';
+//     }
+//     else if (rockPaperGenerator === 2) {
+//       console.log("paper")
+//       rockPaperGenerator = 'paper';
+//     }
+//     else if (rockPaperGenerator === 3) {
+//       console.log("scissors")
+//       rockPaperGenerator = 'scissors';
+//     }
+//     else {
+//       console.log("Broken?")
+//     }
+    
+//     let userGuess = window.prompt("Please guess either rock, paper, or scissors.")
+
+//     if (userGuess === rockPaperGenerator) {
+//         console.log("It's a draw. Go again!")
+//     }
+//     else if (userGuess ){
+//         console.log("Nope!")
+//     }
+
+
+//     }
+//     console.log(rockPaperScissors())
   
-  
+
+
+// Second attempt at a rock paper scissors game below 
+
+
+// function rockPaperScissors() {
+//     let rockPaperGenerator = Math.ceil(Math.random() * 3);
+    
+//     if (rockPaperGenerator === 1) {
+//         console.log("rock")  
+//     }
+    
+    
+//     else if (rockPaperGenerator === 2) {
+//         console.log("paper")
+//     }
+    
+    
+//     else if (rockPaperGenerator === 3) {
+//         console.log("scissors")
+//     }
+
+//     let userGuess = prompt('Please guess either rock, paper, or scissors. (Do not capitalize.)')
+
+//     if (userGuess === 'rock') {
+//         userGuess = 1;
+
+//     }
+    
+    
+//     return rockPaperGenerator;
+// }
+// console.log(rockPaperScissors())
+
+
+//THIRD attempt at rock paper scissors
+
+
+
+function rockPaperScissors() {
+    
+    const rock = 'rock';
+    const paper = 'paper';
+    const scissors = 'scissors';
+
+    let computer = Math.ceil(Math.random() * 3);
+    let you = prompt("please enter rock, paper or, scissors.")
+    you = you.toLowerCase()
+
+    if (computer === 1) {
+        computer = 'rock';
+    }
+    else if (computer === 2) {
+        computer = 'paper';
+    }
+    else if (computer === 3) {
+        computer === 'scissors';
+    }
+
+    console.log(computer);
+
+
+    if (you === 'rock' && computer == rock || you === 'paper' && computer == paper || you === 'scissors' && computer === scissors) {
+        console.log(`You tied!`)
+    }
+    else if (you === 'rock' && computer === paper || you === 'paper' && computer === scissors || you === 'scissors' && computer == rock) {
+        console.log('You lose!')
+    }
+    else if (you === 'rock' && computer == scissors || you === 'paper' && computer == rock || you === 'scissors' && computer === paper) {
+        console.log('You win!')
+    }
+    else {
+        console.log('Something is wrong')
+    }
+
+
+}
+rockPaperScissors()
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
@@ -161,7 +272,7 @@ function annoyingSong(bottles) {
         console.log(`${i} bottles of soda on the wall, ${i} bottles of soda. Take one down, pass it around, ${i-1} bottles of soda on the wall.`);
     }
 }
-console.log(annoyingSong(5))
+annoyingSong(2)
 
 
 
@@ -173,8 +284,29 @@ console.log(annoyingSong(5))
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-  
 
+function gradeCalculator() {
+    let studentGrade = 90;
+
+    if (studentGrade >= 90) {
+        console.log("You got an A!");
+    }
+    else if (studentGrade < 90 && studentGrade >= 80) {
+        console.log("You got a B!");
+    }
+    else if (studentGrade < 80 && studentGrade >= 70) {
+        console.log("You got a C.");
+    }
+    else if (studentGrade < 70 && studentGrade >= 60) {
+        console.log("You got a D..");
+    }
+    else {
+        console.log("Dude, you failed.")
+    }
+
+
+}
+gradeCalculator()
   
   
 
